@@ -1,66 +1,106 @@
 :root {
-    --primary-color: #337ab7;
-    --secondary-color: #f0f0f0;
-    --font-size-heading: 24px;
-    --font-size-paragraph: 16px;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  h1 {
-    color: #337ab7;
-    font-size: 24px;
-    text-align: center;
-  }
-  h4{
-    margin-left: 15px;
-  }
-  p {
-    font-size: 16px;
-  }
-  
-  ul li.special-item {
-    color: green;
-  }
-  ul li {
-    list-style-type: decimal-leading-zero;
-  }
-  img {
-    width: 180px;
-    height: 140px;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  thead > tr > th{
-    background-color: brown;
-  }
-  
-  th, td {
-    border: 1px solid #caad05;
-    padding: 8px;
-  }
-  
-  thead th {
-    background-color: #f0f0f0;
-  }
-  
-  tbody tr:hover {
-    background-color: #f9f9f9;
-  }
-  
+  --primary-color: #365b83;
+  --secondary-color: #8892a3;
+  --font-size-heading: 24px;
+  --font-family: 'Mina', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+img {
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+ul, li {
+  list-style-type: circle;
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+}
+
+.container {
+  background-color: #f5f5f5;
+  width: 1200px;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+h1 {
+  color: purple ;
+  font-size: var(--font-size-heading);
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+ul li:first-child {
+  color: red;
+}
+
+
+table {
+  width: 100%;
+  background-color: #eee;
+  border-collapse: collapse;
+}
+thead > tr > th{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+td {
+  border: 1px solid #4e1414;
+  padding: 5px;
+}
+
+td:first-child {
+  background-color: #f5f5f5;
+}
+
+td:first-child:hover {
+  background-color: #c07e03;
+  color: black;
+}
+
+tr:hover {
+  background-color: #005c50;
+  color: black;
+}
+
+a:hover {
+  color: #9a01c9;
+}
+
+a:active {
+  color: #00979c;
+}
+
+/* .container::before { */
+  /* content: "My Webpage"; */
+  /* display: block; */
+  /* color: #ccc; */
+  /* font-style: italic; */
+  /* text-align: center; */
+/* } */
