@@ -49,6 +49,22 @@ body {
   margin: 0 auto;
 }
 
+.container::before {
+  content: "Before Webpage";
+  display: block;
+  color: #029262;
+  font-style: italic;
+  text-align: center;
+}
+.container::after {
+  content: "After Webpage";
+  margin-top: 10px;
+  display: block;
+  color: #008c96;
+  font-style: italic;
+  text-align: center;
+}
+
 h1 {
   color: purple ;
   font-size: var(--font-size-heading);
@@ -104,10 +120,4 @@ a:hover {
 a:active {
   color: #00979c;
 }
-.container::before {
-  content: "My Webpage";
-  display: block;
-  color: #ccc;
-  font-style: italic;
-  text-align: center;
-}
+
